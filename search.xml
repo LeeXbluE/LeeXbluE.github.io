@@ -8,9 +8,21 @@
       <link href="2021/01/11/course-blog/"/>
       <url>2021/01/11/course-blog/</url>
       
-        <content type="html"><![CDATA[<h1 id="HEXO-博客搭建历程"><a href="#HEXO-博客搭建历程" class="headerlink" title="HEXO 博客搭建历程"></a>HEXO 博客搭建历程</h1><h2 id="本人用到的网站"><a href="#本人用到的网站" class="headerlink" title="本人用到的网站"></a>本人用到的网站</h2><ol><li><a href="https://hexo.io/zh-cn/">hexo 官方文档</a></li><li><a href="https://valine.js.org/">valine–无后端评论系统</a></li><li><a href="https://butterfly.js.org/">Butterfly主题文档</a></li><li><a href="https://pages.github.com/">GitHub Pages–用于部署静态网页</a></li></ol><h3 id="使用的小插件"><a href="#使用的小插件" class="headerlink" title="使用的小插件"></a>使用的小插件</h3><ol><li><a href="https://github.com/mythsman/hexo-douban">豆瓣_hexo-douban</a>由于豆瓣开启了反盗链，因此，一些浏览器（safari）会无法显示图片，可把meta设为true。但此操作会导致一些插件失效（例如：不蒜子）。</li><li><a href="https://github.com/PaicHyperionDev/hexo-generator-search">本地搜索_hexo-generator-search</a></li><li>hexo-wordcount</li></ol><h2 id="注意点"><a href="#注意点" class="headerlink" title="注意点"></a>注意点</h2><ol><li>使用了butterfly的主题，使用了npm安装方式，所以在themes文件夹中没有生成butterfly的文件夹，开始时略困惑，后来做测试的时候使用git安装是会生成的。现在还不知道这个文件夹是否有用。</li><li>一直想吧主题封面换掉，跟着文档，以https 格式获取到的图片是可以显示的，但本地图片却行不通，开始纠结绝对路径、相对路径之类，纠结相对路径中的,/,//,\ 四种有什么区别(因为有些地方格式要求严格到吐血，下次再看这个)。后来看了hexo文档中对<a href="https://hexo.io/zh-cn/docs/asset-folders">资源文件夹</a>的叙述，才知道hexo的资源根目录是source，就此解决。</li><li>Pjax功能，文档说容易出现问题。</li></ol><h2 id="待解决"><a href="#待解决" class="headerlink" title="待解决"></a>待解决</h2><ol><li>对github上的秘钥之类的事不够了解</li><li>github中 private的资源与public的资源使用区别</li><li>github 分支用法用处 ，master分支等</li><li>meta是什么？</li><li>CDN是什么？</li><li>后续可实现PWA</li><li>hexo clean &amp;&amp; hexo g &amp;&amp; hexo d 三件套<br><a href="https://artitalk.js.org/doc.html#%F0%9F%8C%88-leancloud-%E7%9A%84%E7%9B%B8%E5%85%B3%E5%87%86%E5%A4%87">LeanCloud 的相关准备</a></li></ol><p><a href="https://blog.csdn.net/qq_36667170/article/details/79094257?ops_request_misc=%25257B%252522request%25255Fid%252522%25253A%252522161034222116780274110751%252522%25252C%252522scm%252522%25253A%25252220140713.130102334..%252522%25257D&request_id=161034222116780274110751&biz_id=0&utm_medium=distribute.pc_search_result.none-task-blog-2~all~baidu_landing_v2~default-2-79094257.first_rank_v2_pc_rank_v29&utm_term=ssh%20keys%20%E4%B8%8B%E8%BD%BD">GitHub教程 SSH keys配置</a></p><p><a href="https://akioi.eu.org/hexo-ssh-deploy/">Hexo：配置 SSH 公钥部署</a></p><h2 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h2><p>开始时没有好好看文档，一味地想找到现成，总是容易急于求成，所以兜转了很久。</p>]]></content>
+        <content type="html"><![CDATA[<h1 id="HEXO-博客搭建历程"><a href="#HEXO-博客搭建历程" class="headerlink" title="HEXO 博客搭建历程"></a>HEXO 博客搭建历程</h1><h2 id="本人用到的网站"><a href="#本人用到的网站" class="headerlink" title="本人用到的网站"></a>本人用到的网站</h2><ol><li><a href="https://hexo.io/zh-cn/">hexo 官方文档</a></li><li><a href="https://valine.js.org/">valine–无后端评论系统</a></li><li><a href="https://butterfly.js.org/">Butterfly主题文档</a></li><li><a href="https://pages.github.com/">GitHub Pages–用于部署静态网页</a></li></ol><h3 id="使用的小插件"><a href="#使用的小插件" class="headerlink" title="使用的小插件"></a>使用的小插件</h3><ol><li><a href="https://github.com/mythsman/hexo-douban">豆瓣_hexo-douban</a>由于豆瓣开启了反盗链，因此，一些浏览器（safari）会无法显示图片，可把meta设为true。但此操作会导致一些插件失效（例如：不蒜子）。</li><li><a href="https://github.com/PaicHyperionDev/hexo-generator-search">本地搜索_hexo-generator-search</a></li><li>hexo-wordcount</li></ol><h2 id="注意点"><a href="#注意点" class="headerlink" title="注意点"></a>注意点</h2><ol><li>使用了butterfly的主题，使用了npm安装方式，所以在themes文件夹中没有生成butterfly的文件夹，开始时略困惑，后来做测试的时候使用git安装是会生成的。现在还不知道这个文件夹是否有用。</li><li>一直想吧主题封面换掉，跟着文档，以https 格式获取到的图片是可以显示的，但本地图片却行不通，开始纠结绝对路径、相对路径之类，纠结相对路径中的,/,//,\ 四种有什么区别(因为有些地方格式要求严格到吐血，下次再看这个)。后来看了hexo文档中对<a href="https://hexo.io/zh-cn/docs/asset-folders">资源文件夹</a>的叙述，才知道hexo的资源根目录是source，就此解决。</li><li>Pjax功能，文档说容易出现问题。</li></ol><h2 id="待解决"><a href="#待解决" class="headerlink" title="待解决"></a>待解决</h2><ol><li>对github上的秘钥之类的事不够了解</li><li>github中 private的资源与public的资源使用区别</li><li>github 分支用法用处 ，master分支等</li><li>meta是什么？</li><li>CDN是什么？</li><li>后续可实现PWA</li><li>hexo clean &amp;&amp; hexo g &amp;&amp; hexo d 三件套</li><li><a href="https://www.antmoe.com/posts/7198453/index.html">引入文件(以相对路径引入/以外链的方式_传到 cdn)</a></li></ol><h2 id="以后需要"><a href="#以后需要" class="headerlink" title="以后需要"></a>以后需要</h2><ol><li><a href="https://www.antmoe.com/posts/a811d614/index.html#%E9%A1%B5%E8%84%9A%E5%8D%8A%E9%80%8F%E6%98%8E">分类卡片折叠、任意元素添加动效动画</a></li><li><a href="https://www.antmoe.com/posts/284f2e1c/index.html">Valine 评论添加表情</a></li><li><a href="https://www.antmoe.com/posts/a811d614/index.html#%E9%A1%B5%E8%84%9A%E5%8D%8A%E9%80%8F%E6%98%8E">Valien 评论 QQ、微信提醒</a></li></ol><h2 id="图床"><a href="#图床" class="headerlink" title="图床"></a>图床</h2><ol><li>为了在博客里面加入图片。图床当然是必须的啊，国内首推七牛。访问速度极快，支持日志、防盗链和水印。免费用户有每月10GB流量+总空间10GB+PUT/DELETE 10万次请求+GET 100万次请求，这对个人博客来说足够。注册页面请点击猛戳这里</li><li><a href="https://www.upyun.com/">又拍云</a></li><li>Github+jsDelivr+PicGo 打造稳定快速、高效免费图床</li></ol><p><a href="https://www.yevpt.com/post/45">内网穿透神器-NPS使用教程</a></p><p><a href="https://artitalk.js.org/doc.html#%F0%9F%8C%88-leancloud-%E7%9A%84%E7%9B%B8%E5%85%B3%E5%87%86%E5%A4%87">LeanCloud 的相关准备</a></p><p><a href="https://blog.csdn.net/qq_36667170/article/details/79094257?ops_request_misc=%25257B%252522request%25255Fid%252522%25253A%252522161034222116780274110751%252522%25252C%252522scm%252522%25253A%25252220140713.130102334..%252522%25257D&request_id=161034222116780274110751&biz_id=0&utm_medium=distribute.pc_search_result.none-task-blog-2~all~baidu_landing_v2~default-2-79094257.first_rank_v2_pc_rank_v29&utm_term=ssh%20keys%20%E4%B8%8B%E8%BD%BD">GitHub教程 SSH keys配置</a></p><p><a href="https://akioi.eu.org/hexo-ssh-deploy/">Hexo：配置 SSH 公钥部署</a></p><h2 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h2><p>开始时没有好好看文档，一味地想找到现成，总是容易急于求成，所以兜转了很久。</p>]]></content>
       
       
+      <categories>
+          
+          <category> fenglei </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> tags </tag>
+            
+        </tags>
       
     </entry>
     
@@ -24,6 +36,32 @@
         <content type="html"><![CDATA[<p>Welcome to <a href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p><h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">&quot;My New Post&quot;</span></span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/writing.html">Writing</a></p><h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/server.html">Server</a></p><h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/generating.html">Generating</a></p><h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure><p>如果您想要更改端口，或是在执行时遇到了 EADDRINUSE 错误，可以在执行时使用 -p 选项指定其他端口，如下：</p><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server -p 5000</span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>]]></content>
       
       
+      <categories>
+          
+          <category> Linux </category>
+          
+          <category> Hexo </category>
+          
+          <category> wode </category>
+          
+          <category> nihao </category>
+          
+          <category> wods </category>
+          
+          <category> dsafdsa </category>
+          
+          <category> Tools </category>
+          
+          <category> PHP </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 测试 </tag>
+            
+        </tags>
       
     </entry>
     
